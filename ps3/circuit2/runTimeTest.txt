@@ -1,0 +1,110 @@
+the most time-cost method:
+    list
+    intersects
+the most time-cost percall method:
+    _compute_crossings
+
+124668802
+         1436321485 function calls (1436321414 primitive calls) in 488.451 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+187590314  153.959    0.000  229.407    0.000 circuit2.py:55(intersects)
+    20000  104.204    0.005  195.958    0.010 circuit2.py:157(list)
+562840882   75.462    0.000   75.462    0.000 circuit2.py:47(is_horizontal)
+        1   57.792   57.792  488.197  488.197 circuit2.py:336(_compute_crossings)
+299400000   52.675    0.000   52.675    0.000 circuit2.py:246(__le__)
+261444830   39.079    0.000   39.079    0.000 circuit2.py:256(__ge__)
+124719049    4.972    0.000    4.972    0.000 {method 'append' of 'list' objects}
+        1    0.064    0.064    0.176    0.176 circuit2.py:119(from_file)
+    34970    0.050    0.000    0.069    0.000 circuit2.py:20(__init__)
+        1    0.042    0.042    0.054    0.054 circuit2.py:327(_events_from_layer)
+    20000    0.038    0.000    0.038    0.000 circuit2.py:281(__init__)
+        1    0.021    0.021    0.021    0.021 {method 'sort' of 'list' objects}
+    34970    0.021    0.000    0.090    0.000 circuit2.py:99(add_wire)
+    34972    0.012    0.000    0.012    0.000 {method 'readline' of 'file' objects}
+    34970    0.010    0.000    0.010    0.000 circuit2.py:81(next_object_id)
+    34972    0.010    0.000    0.010    0.000 {method 'split' of 'str' objects}
+    20000    0.009    0.000    0.009    0.000 circuit2.py:290(__init__)
+20460/20445    0.009    0.000    0.009    0.000 {len}
+    20000    0.007    0.000    0.007    0.000 circuit2.py:363(trace_sweep_line)
+    14970    0.006    0.000    0.006    0.000 circuit2.py:233(__init__)
+    20000    0.003    0.000    0.003    0.000 circuit2.py:51(is_vertical)
+    14970    0.003    0.000    0.003    0.000 circuit2.py:147(add)
+        2    0.001    0.001    0.001    0.001 {method 'values' of 'dict' objects}
+       57    0.001    0.000    0.001    0.000 {min}
+        1    0.001    0.001  488.451  488.451 circuit2.py:3(<module>)
+        1    0.001    0.001    0.002    0.002 __init__.py:99(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'write' of 'file' objects}
+        1    0.000    0.000    0.001    0.001 decoder.py:2(<module>)
+     15/6    0.000    0.000    0.000    0.000 sre_parse.py:414(_parse)
+        1    0.000    0.000    0.000    0.000 scanner.py:2(<module>)
+     26/6    0.000    0.000    0.000    0.000 sre_compile.py:64(_compile)
+        1    0.000    0.000  488.197  488.197 circuit2.py:313(count_crossings)
+      118    0.000    0.000    0.000    0.000 sre_parse.py:194(__next)
+       14    0.000    0.000    0.000    0.000 sre_compile.py:256(_optimize_charset)
+        1    0.000    0.000    0.000    0.000 encoder.py:2(<module>)
+    35/15    0.000    0.000    0.000    0.000 sre_parse.py:152(getwidth)
+        6    0.000    0.000    0.001    0.000 re.py:230(_compile)
+     13/6    0.000    0.000    0.000    0.000 sre_parse.py:336(_parse_sub)
+       91    0.000    0.000    0.000    0.000 sre_parse.py:142(__getitem__)
+        6    0.000    0.000    0.000    0.000 sre_compile.py:433(_compile_info)
+       14    0.000    0.000    0.000    0.000 sre_compile.py:228(_compile_charset)
+       94    0.000    0.000    0.000    0.000 sre_parse.py:213(get)
+        4    0.000    0.000    0.000    0.000 sre_compile.py:411(_mk_bitmap)
+        6    0.000    0.000    0.001    0.000 sre_compile.py:567(compile)
+      109    0.000    0.000    0.000    0.000 {isinstance}
+       18    0.000    0.000    0.000    0.000 sre_parse.py:237(_class_escape)
+        6    0.000    0.000    0.000    0.000 sre_parse.py:725(parse)
+       80    0.000    0.000    0.000    0.000 sre_parse.py:207(match)
+        1    0.000    0.000    0.075    0.075 circuit2.py:299(__init__)
+       32    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+       48    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+       50    0.000    0.000    0.000    0.000 sre_parse.py:138(__len__)
+        6    0.000    0.000    0.000    0.000 sre_compile.py:552(_code)
+        9    0.000    0.000    0.000    0.000 sre_compile.py:428(_simple)
+        6    0.000    0.000    0.001    0.000 re.py:192(compile)
+       12    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 decoder.py:302(__init__)
+       25    0.000    0.000    0.000    0.000 sre_parse.py:150(append)
+       26    0.000    0.000    0.000    0.000 sre_parse.py:93(__init__)
+       12    0.000    0.000    0.000    0.000 sre_compile.py:546(isstring)
+        2    0.000    0.000    0.000    0.000 {_struct.unpack}
+       32    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        6    0.000    0.000    0.000    0.000 {_sre.compile}
+        2    0.000    0.000    0.000    0.000 os.py:446(get)
+        6    0.000    0.000    0.000    0.000 sre_parse.py:75(opengroup)
+        4    0.000    0.000    0.000    0.000 sre_parse.py:278(_escape)
+        6    0.000    0.000    0.000    0.000 sre_parse.py:68(__init__)
+        6    0.000    0.000    0.000    0.000 sre_parse.py:190(__init__)
+        1    0.000    0.000    0.000    0.000 decoder.py:17(_floatconstants)
+       32    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 encoder.py:101(__init__)
+        4    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 circuit2.py:143(__init__)
+        4    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        6    0.000    0.000    0.000    0.000 sre_parse.py:86(closegroup)
+        6    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+       32    0.000    0.000    0.000    0.000 {chr}
+        1    0.000    0.000    0.000    0.000 circuit2.py:14(Wire)
+        9    0.000    0.000    0.000    0.000 sre_parse.py:146(__setitem__)
+        1    0.000    0.000    0.000    0.000 encoder.py:70(JSONEncoder)
+        1    0.000    0.000    0.000    0.000 circuit2.py:140(RangeIndex)
+        1    0.000    0.000    0.000    0.000 decoder.py:272(JSONDecoder)
+        1    0.000    0.000    0.000    0.000 circuit2.py:88(WireLayer)
+        1    0.000    0.000    0.000    0.000 circuit2.py:228(KeyWirePair)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 circuit2.py:372(TracedCrossVerifier)
+        1    0.000    0.000    0.000    0.000 circuit2.py:201(__init__)
+        1    0.000    0.000    0.000    0.000 circuit2.py:169(TracedRangeIndex)
+       15    0.000    0.000    0.000    0.000 {ord}
+        2    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 circuit2.py:296(CrossVerifier)
+        1    0.000    0.000    0.000    0.000 circuit2.py:198(ResultSet)
+        1    0.000    0.000    0.000    0.000 circuit2.py:91(__init__)
+        1    0.000    0.000    0.000    0.000 circuit2.py:277(KeyWirePairL)
+        1    0.000    0.000    0.000    0.000 circuit2.py:286(KeyWirePairH)
+        4    0.000    0.000    0.000    0.000 {max}
+        6    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 circuit2.py:215(TracedResultSet)
