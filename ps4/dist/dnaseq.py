@@ -15,6 +15,29 @@ Y=1
 ### Utility classes ###
 
 # Maps integer keys to a set of arbitrary values.
+
+class RollingHash:
+    def __init__(self, s):
+        self.HASH_BASE = 7
+        self.seqlen = len(s)
+        n = self.seqlen - 1
+        h = 0
+        for c in s:
+            h += ord(c) * (self.HASH_BASE ** n)
+            n -= 1
+        self.curhash = h
+
+    # Returns the current hash value.
+    def hash(self):
+        return self.curhash
+
+    # Updates the hash by removing previtm and adding nextitm.  Returns the updated
+    # hash value.
+    def slide(self, previtm, nextitm):
+        self.curhash = (self.curhash * self.HASH_BASE) + ord(nextitm)
+        self.curhash -= ord(previtm) * (self.HASH_BASE ** self.seqlen)
+        return self.curhash
+
 class Multidict:
     # Initializes a new multi-value dictionary, and adds any key-value
     # 2-tuples in the iterable sequence pairs to the data structure.
